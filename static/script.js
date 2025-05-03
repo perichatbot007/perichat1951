@@ -172,7 +172,7 @@ function sendMessage() {
   userMsg.textContent = message;
   currentConversation.appendChild(userMsg);
 
-  fetch("http://localhost:8000/chat", {
+  fetch("/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message })
