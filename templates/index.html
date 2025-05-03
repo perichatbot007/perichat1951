@@ -7,7 +7,7 @@
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/86/Perichat_logo2.png" type="image/png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
 
@@ -218,6 +218,6 @@
         </div>
       </div>
     </div>
-<script src="script.js"></script>  
+<script src="{{ url_for('static', filename='script.js') }}"></script>  
   </body>
 
